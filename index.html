@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Internal Style -->
+        <style>
+            * 
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body 
+            {
+                font-family: Arial, sans-serif;
+                background-color: #a6d5e3;
+                padding: 20px;
+            }
+
+            .container 
+            {
+                max-width: 1200px;
+                /* margin: 0 auto; */
+                display: flex;
+                /* flex-wrap: wrap; */
+                gap: 20px;
+                /* justify-content: center; */
+                /* align-items: center; */
+                margin-top: 100px;
+                margin-left: 25px;
+            }
+
+            .profile-card, .info-section, .other-info 
+            {
+                background-color: #f2e8e8;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                flex: 1;
+                min-width: 300px;
+            }
+
+            .profile-card 
+            {
+                text-align: center;
+                background-color: #ff78ac;
+                color: white;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .profile-card img 
+            {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            h2 
+            {
+                margin-bottom: 10px;
+            }
+
+            .info-section h4, .other-info h4 
+            {
+                color: #b34747;
+                margin-bottom: 15px;
+            }
+
+            .info-section table 
+            {
+                width: 100%;
+            }
+
+            .info-section table td 
+            {
+                padding: 8px 0;
+            }
+
+            .info-section table td:first-child 
+            {
+                font-weight: bold;
+            }
+
+            .other-info 
+            {
+                margin-top: 10px;
+            }
+
+            p 
+            {
+                line-height: 1.6;
+            }
+
+            table, td, tr
+            {
+                border: 1px solid black;
+            }
+
+            .fa
+            {
+                color: black;
+            }
+            
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    margin-top: 5px;
+                    margin-left: -10px;
+                }
+            }
+            @media (min-width: 1024px)
+            {
+                .container
+                {
+                    margin-top: 10px;
+                }   
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="profile-card">
+                <img src="./profilecard_image.jpeg" alt="Profile Photo">
+                <h2 style="font-family: ui-rounded;">RESHMA M</h2>
+                <p><strong>Student ID : </strong> 3210000001</p>
+                <p><strong>Stream : </strong> BCOM</p>
+                <p><strong>Section : </strong> A</p>
+            </div>
+
+            <div class="container2">
+                <div class="info-section">
+                    <h4><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;General Information</h4>
+                    <table>
+                        <tr>
+                            <td>&nbsp;Roll</td>
+                            <td>&nbsp; 125</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;Academic Year</td>
+                            <td>&nbsp; 2021</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;Gender</td>
+                            <td>&nbsp; Female</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;Native</td>
+                            <td>&nbsp; Indian</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;Blood</td>
+                            <td>&nbsp; O-ve</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="other-info">
+                    <h4><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Other Information</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipisci ratione quam similique accusantium ab error, 
+                    pariatur facilis, qui, consequuntur dignissimos id eum aut facere!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
